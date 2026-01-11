@@ -1,4 +1,4 @@
-# Project Title
+# GROUP 6
 One-line description (e.g., "Volunteer scheduling app for [Non‑Profit Name]")
 
 ## Contents
