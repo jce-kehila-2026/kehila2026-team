@@ -18,7 +18,7 @@ Briefly describe what the project does, who it serves, and the main value (1–2
 - **Doha Abdelnabi** — GitHub: @doha-abdelnabi
 - **Widad Rajabi** — GitHub: @WidadRajabi
 
-##Project goals
+## Project goals
 - Describe the main goal of the project
 - List 2-3 key objectives.
 
