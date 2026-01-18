@@ -28,6 +28,9 @@ Briefly describe what the project does, who it serves, and the main value (1–2
 - Describe the main goal of the project
 - List 2-3 key objectives.
 
+## Wiki
+See the team workflow page in the repository wiki.
+
 ## Quick start (local)
 1. git clone https://github.com/<org>/<repo>.git
 2. cd <repo>
