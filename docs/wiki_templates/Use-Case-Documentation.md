@@ -15,18 +15,19 @@
 
 The system includes the following main use cases:
 
-Participant / Registered User:
+Participant (Visitor):
 - View Activities / View Monthly Calendar
 - View Activity Details
 - Register for Activity
-- Pay by Credit Card
+- Pay by Credit Card (for paid activities)
+
 Admin (Staff Member):
-- Staff Login
 - Manage Activities
-- View Activity Registrations
+- View and Manage Registrations
 - Check Attendance
 - View Statistics
 - Send Notification (via WhatsApp)
+
   
 <img src="../images/use-case-diagram.jpeg" width="600">
 
@@ -114,6 +115,7 @@ Admin (Staff Member):
 - If no registrations exist → system displays “No participants registered”.
 - If saving fails → system shows an error and keeps previous attendance state.
   
+
 
 
 
