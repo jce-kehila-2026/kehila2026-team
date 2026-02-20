@@ -1,4 +1,4 @@
-# Project Title
+# GROUP 6
 One-line description (e.g., "Volunteer scheduling app for [Non‑Profit Name]")
 
 ## Contents
@@ -13,9 +13,23 @@ Briefly describe what the project does, who it serves, and the main value (1–2
 - Key deliverable for them: e.g., "Simple roster export and sign-up form."
 
 ## Team
-- Team lead — Name — email — GitHub  
-- Members — Name — role — GitHub  
-Include student IDs if required.
+- **Rannen Kharma** — email : raneenkh@post.jce.ac.il — GitHub: @raneen12kh
+- **Sujood Totah** — GitHub: @sujood-totah
+- **Doha Abdelnabi** — GitHub: @doha-abdelnabi
+- **Widad Rajabi** — GitHub: @WidadRajabi
+
+### Team Roles
+- **Team Lead** – Responsible for coordination, task distribution, and final decisions.
+- **Backend Developer** – Handles server-side logic and data management.
+- **Frontend Developer** – Responsible for user interface and user experience.
+- **Documentation** – Maintains README, Wiki, and project documentation.
+
+## Project goals
+- Describe the main goal of the project
+- List 2-3 key objectives.
+
+## Wiki
+See the team workflow page in the repository wiki.
 
 ## Quick start (local)
 1. git clone https://github.com/<org>/<repo>.git
