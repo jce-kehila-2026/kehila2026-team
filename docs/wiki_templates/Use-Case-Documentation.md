@@ -43,40 +43,8 @@ Admin (Staff Member):
 
 ### Exception Flows:
 - If there are no activities in the selected month, the system displays a "No activities available" message.
-  
-## UC2 – View Activity Details
 
-**Primary Actor:** Visitor  
-**Preconditions:** The selected activity exists.  
-**Postconditions:** The activity details page is displayed.
-
-### Basic Flow:
-1. The user selects an activity.
-2. The system displays full activity details including date, location, description, price, and capacity.
-3. The user may choose to register.
-
-### Exception Flows:
-- If the activity no longer exists, the system displays an error message.
-
-## UC3 – Register for Activity
-
-**Primary Actor:** Visitor  
-**Preconditions:** Registration is open and the activity is not full.  
-**Postconditions:** A registration record is created.
-
-### Basic Flow:
-1. The user clicks "Register".
-2. The system displays a registration form.
-3. The user fills in personal details and submits the form.
-4. The system validates the input.
-5. The system creates a registration record.
-6. If the activity requires payment, the system proceeds to payment.
-
-### Exception Flows:
-- If required fields are missing, the system displays validation errors.
-- If the activity is full, the system displays a "Registration closed" message.
-
-## UC4 – Pay by Credit Card
+## UC2 – Pay by Credit Card
 
 **Primary Actor:** Visitor  
 **Supporting Actor:** External Payment System  
@@ -94,7 +62,7 @@ Admin (Staff Member):
 - If payment fails, the system displays an error message.
 - If the payment service is unavailable, the system asks the user to try again later.
 
-## UC5 – Manage Activities
+## UC3 – Manage Activities
 
 **Primary Actor:** Admin  
 **Preconditions:** The admin is authorized.  
@@ -109,7 +77,7 @@ Admin (Staff Member):
 ### Exception Flows:
 - If invalid data is entered, the system displays an error message.
 
-## UC6 – View and Manage Registrations (View Activity Registration)
+## UC4 – View and Manage Registrations (View Activity Registration)
 **Primary Actor:** Admin (Staff Member)
 **Supporting Actors:** DB
 **Preconditions:** Admin is authorized (logged in). Activities exist.
@@ -129,7 +97,7 @@ Admin (Staff Member):
 - If DB is unavailable → system shows “Try again later” and no changes are saved.
 - If admin is not authorized → access denied.
 
-## UC7 – Check Attendance
+## UC5 – Check Attendance
 **Primary Actor:** Admin (Staff Member)
 **Supporting Actors:** DB
 **Preconditions:** Admin is authorized. The activity exists and has registrations.
@@ -146,41 +114,7 @@ Admin (Staff Member):
 - If no registrations exist → system displays “No participants registered”.
 - If saving fails → system shows an error and keeps previous attendance state.
   
-## UC8 – Send Notification
-**Primary Actor:** Admin (Staff Member)
-**Supporting Actors:** WhatsApp API, DB
-**Preconditions:** Admin is authorized. Recipients exist (registered participants).
-**Postconditions:** Notification status is stored (sent/failed).
 
-### Basic Flow:
-1. Admin selects an activity and clicks “Send Notification”.
-2. Admin chooses message type (confirmation / reminder / change / cancellation).
-3. The system builds the recipient list from DB.
-4. The system sends messages via WhatsApp API.
-5. The system logs results (sent/failed) in DB and shows a summary.
-   
-### Exception Flows:
-- If WhatsApp API is unavailable → system shows “Service unavailable” and logs failure.
-- If some numbers are invalid → system sends to valid recipients and reports invalid ones.
-  
-## UC9 – View Statistics
-**Primary Actor:** Admin (Staff Member)
-**Supporting Actors:** DB
-**Preconditions:** Admin is authorized.
-**Postconditions:** Statistics are displayed.
-
-### Basic Flow:
-1. Admin opens “Statistics”.
-2. The system shows stats such as:
-3. Number of registrations per activity
-4. Attendance rate
-5. Paid vs unpaid registrations
-6. Admin can filter by date range/activity.
-7. The system updates the view accordingly.
-
-### Exception Flows:
-- If there is no data → system displays “No data available”.
-- If DB is unavailable → system displays an error message.
 
 
 
